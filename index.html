@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DAO, acuerdo de socios descentralizado y seguro">
+    <meta name="author" content="Mario A-wolfhack">
+    <meta name="robots" conten="DAO, dao, pacto de socios, socios, pacto, acuerdo, contrato, sociedad, anónima, asociación, civil">
+    <title>Pacto-Tesis</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+</head>
+    <body class="body">
+       
+        <script>
+            Moralis.initialize("WZcbHYMEeGVUphFSvKIuydnZJ6vmhlMD51qZu0uc");
+            Moralis.serverURL = "https://7jezlepeazpd.usemoralis.com:2053/server";
+            
+            async function login() {
+                console.log('login click');
+                var user = await Moralis.Web3.authenticate();
+                if(user){
+                    console.log(user)
+;                }
+            }
+        </script>
+        <div class="header">
+            <img src="./recursos/logo_pacto_blanco.png" alt="logo" class="header_logo">
+            <div class="header_text">NOSOTROS</div>
+            <div class="header_text">CONTRATOS</div>
+            <div class="header_text">BENEFICIOS</div>
+        </div>
+        <div class="main">
+              <div class="card">
+                <img src="./recursos/logo_pacto_blanco.png" alt="logo" class="main_logo">
+                <h3 class="h3">Tu acuerdo más seguro esta con nosotros.</h3>
+                <p class="main_p">Hemos fusionado el diseño con el aspecto legal te ofrecemos contratosmás claros y accesibles que van a la par de tus objetivos.</p>
+                <button class="main_button">Crear Pacto de Socios</button>
+            </div>
+        </div>
+        <section class="nosotros">
+            <h2 class="h2">NOSOTROS</h2>
+            <img class="nosotros_img" src="./IMAGENES/`Pacto_image_01.jpg" alt="">
+            <div class="nosotros_text">
+                <h3>La plataforma más justa a tu medida</h3>
+                <p>Te damos la bienvenida a la nueva manera de creación y gestión de contratos.</p>
+                <p>Nuestra misión es hacer másaccesibes y legales los acuerdos entre cualquier tipo de personas o empresas, permitiendo que una herramienta para prottegernos como es un contrato, esté al alcance de todos.</p>
+                <p>Nosotros te protegemos y somos transparentes, sin malentendidos, ni documentos confusos.</p>
+            </div>
+        </section>
+        <section class="contratos">
+            <h2 class="h22">CONTRATOS</h2>
+            <div class="contrato1"><img src="./ICONOS/Influencer.svg" alt="Influencer"></div>
+            <div class="contrato2"><img src="./ICONOS/Pacto_Socios.svg" alt="Pacto de Socios"></div>
+            <div class="contrato3"><img src="./ICONOS/Confidencialidad.svg" alt="confidencialidad"></div>
+            <div class="contrato4"><img src="./ICONOS/Aviso_Privacidad.svg" alt="Aviso de Aviso_Privacidad" ></div>
+            <div class="contrato5"><img src="./ICONOS/Publicitario.svg" alt="public"></div>
+            <div class="contrato6"><img src="./ICONOS/Terminos_Condiciones.svg" alt="tyc"></div>
+            <div class="contrato7"><img src="./ICONOS/Desarrollo_Software.svg" alt="software"></div>
+        </section>
+        <section class=" beneficios">
+            <h2>BENEFICIOS</h2>
+
+           
+        </section>
+
+        <footer class="contacto">
+            <h2>CONTACTO</h2>
+
+        </footer>
+
+        <button class='metamask' onclick="login()">Login Metamask</button>      
+            
+    </body>
+</html>
