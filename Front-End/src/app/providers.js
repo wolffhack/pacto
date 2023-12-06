@@ -2,7 +2,12 @@
 "use client";
 
 import { ChakraProvider } from "@chakra-ui/react";
+import { UserContextProvider } from "../../context/User";
 
 export function Providers({ children }) {
-  return <ChakraProvider>{children}</ChakraProvider>;
+  return (
+    <ChakraProvider>
+      <UserContextProvider>{children}</UserContextProvider>
+    </ChakraProvider>
+  );
 }

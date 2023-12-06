@@ -1,17 +1,16 @@
 "use client";
-import { Flex, Image, Button, Heading } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
-const ethers = require("ethers");
-import { useEffect, useState } from "react";
 
-export default function Heeader() {
-  const router = useRouter();
-  //Wallet Address state
-  const [wallet, setWallet] = useState("");
+import { createContext, useContext, useState } from "react";
+const ethers = require("ethers");
+
+const UserContext = createContext({});
+
+export const UserContextProvider = ({ children }) => {
+  const [user, setUser] = useState("");
+
   //Metamask Login
   const MetaLog = async () => {
     let signer = null;
-
     let provider;
     if (window.ethereum == null) {
       // If MetaMask is not installed, we use the default provider,
@@ -30,30 +29,14 @@ export default function Heeader() {
       // operations, which will be performed by the private key
       // that MetaMask manages for the user.
       signer = await provider.getSigner();
-      setWallet(signer.address);
-      router.push("/dapp");
-      console.log(signer);
+      setUser(signer);
     }
   };
-
   return (
-    <Flex
-      // bgColor={"black"}
-      color="#05D5FB"
-      justify="space-between"
-      align={"center"}
-      h="10vh"
-    >
-      <Heading>PRO-IUS</Heading>
-      {/* <Image
-        src="Logo_pacto_blanco.png"
-        objectFit={"contain"}
-        boxSize={"80px"}
-      /> */}
-      <Button bgColor={"#05D5FB"} color="#000575" onClick={MetaLog}>
-        Login
-      </Button>
-      <h3>Wallet Address: {wallet} </h3>
-    </Flex>
+    <UserContext.Provider value={{ user, MetaLog }}>
+      {children}
+    </UserContext.Provider>
   );
-}
+};
+
+export const useUserContext = () => useContext(UserContext);

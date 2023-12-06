@@ -11,7 +11,7 @@ export default function Landing() {
   return (
     <>
       <Head>
-        <title>Pacto DAO</title>
+        <title>Pro-IUS</title>
         <meta name="description" content="DAO Builder" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Pacto_Socios.svg" />

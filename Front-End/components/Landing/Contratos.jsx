@@ -10,17 +10,17 @@ export default function Contratos() {
 
   return (
     <Box textAlign="center">
-      <Heading>Contracts</Heading>
+      <Heading>FUNDING TYPES</Heading>
       <Flex w="100%" align="center">
         <Box sx={styleContratos}>
           <Image src={"influencer.svg"} />
-          <Text>Influencer Contract</Text>
+          <Text>Criminal Case.</Text>
         </Box>
         <Box sx={styleContratos}>
           <Image src={"Aviso_Privacidad.svg"} />
-          <Text>Privacy Politics</Text>
+          <Text>Enviroment Case.</Text>
         </Box>
-        <Box sx={styleContratos}>
+        {/* <Box sx={styleContratos}>
           <Image src={"Pacto_Socios.svg"} />
           <Text>Partner Pact</Text>
         </Box>
@@ -42,8 +42,8 @@ export default function Contratos() {
         <Box sx={styleContratos}>
           <Image src={"Publicitario.svg"} />
           <Text>Publicity</Text>
-        </Box>
-        <Spacer />
+        </Box> */}
+        {/* <Spacer /> */}
       </Flex>
     </Box>
   );

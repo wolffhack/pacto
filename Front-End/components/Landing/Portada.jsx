@@ -20,16 +20,14 @@ export default function Portada() {
   return (
     <Flex align="center" borderTop={"1px"}>
       <Flex direction={"column"} w="60%" p="5" pl="10" align="center">
-        <Image m="2rem" src={"logo_pacto_blanco.png"} boxSize={"70%"} />
-
-        <Text fontSize={"1.5rem"}>
-          Your legal protection in the blockchain ecosystem.
-        </Text>
+        {/* <Image m="2rem" src={"logo_pacto_blanco.png"} boxSize={"70%"} /> */}
+        <Heading>PRO-IUS</Heading>
+        <Text fontSize={"1.5rem"}>Real World Justice Funding</Text>
         <Image src="Pacto_Socios.svg" sx={mainImage} />
         {/* <Text fontSize={"1.5rem"}>Redactamos los términos y condiciones, y el aviso de privacidad  de tu página web.</Text> */}
 
         <Button bgColor={"rgba(0,0,0,0)"} color="#05D5FB" w="45%" border="1px">
-          Protect Now!
+          ask for Justice!
         </Button>
       </Flex>
     </Flex>
