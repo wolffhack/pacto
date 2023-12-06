@@ -10,38 +10,38 @@ export default function Contratos() {
 
   return (
     <Box textAlign="center">
-      <Heading>Contratos</Heading>
+      <Heading>Contracts</Heading>
       <Flex w="100%" align="center">
         <Box sx={styleContratos}>
           <Image src={"influencer.svg"} />
-          <Text>Contrato de influencer</Text>
+          <Text>Influencer Contract</Text>
         </Box>
         <Box sx={styleContratos}>
           <Image src={"Aviso_Privacidad.svg"} />
-          <Text>Aviso de Privacidad</Text>
+          <Text>Privacy Politics</Text>
         </Box>
         <Box sx={styleContratos}>
           <Image src={"Pacto_Socios.svg"} />
-          <Text>Pacto de Socios</Text>
+          <Text>Partner Pact</Text>
         </Box>
         <Box sx={styleContratos}>
           <Image src={"Desarrollo_Software.svg"} />
-          <Text>Desarrollo de software</Text>
+          <Text>Software Devellopment</Text>
         </Box>
       </Flex>
       <Flex>
         <Spacer />
         <Box sx={styleContratos}>
           <Image src={"Terminos_Condiciones.svg"} />
-          <Text>Términos y Condiciones</Text>
+          <Text>Terms & Conditions</Text>
         </Box>
         <Box sx={styleContratos}>
           <Image src={"Confidencialidad.svg"} />
-          <Text>Confidencialidad</Text>
+          <Text>Confidenciality</Text>
         </Box>
         <Box sx={styleContratos}>
           <Image src={"Publicitario.svg"} />
-          <Text>Publicitario</Text>
+          <Text>Publicity</Text>
         </Box>
         <Spacer />
       </Flex>

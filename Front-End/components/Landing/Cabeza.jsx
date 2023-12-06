@@ -1,6 +1,6 @@
 "use client";
 import { Flex, Image, Button } from "@chakra-ui/react";
-import { ethers } from "ethers";
+// import { ethers } from "ethers";
 import { useState } from "react";
 
 export default function Heeader() {

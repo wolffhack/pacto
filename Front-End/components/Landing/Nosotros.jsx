@@ -14,12 +14,9 @@ export default function Nosotros() {
       <Flex>
         <Image src="Pacto_image_01.jpg" rounded={"10%"} w="50%" m="1.5rem" />
         <Flex direction="column" m="1.5rem">
-          <Text fontSize={"1.5rem"}>
-            Abogados que entienden el mundo virtual y la forma de hacer
-            negocios.
-          </Text>
+          <Text fontSize={"1.5rem"}>Web3 Lawyers</Text>
           <Text mt="1rem">
-            Bienvenido a la plataforma de acuerdos seguros,
+            Welcome to your legal DAO platform,
             <br /> accesibles y justos para empresarios y empresas <br /> del
             entorno digital.
           </Text>
